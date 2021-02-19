@@ -14,8 +14,8 @@ A sample app with a custom DateGrid control
 
 ## Control code
 
-- [DateGrid.cs](/src/DateGrid/DateGrid/DateGrid/DateGrid.cs)
-- [DateExtensions.cs](/src/DateGrid/DateGrid/DateGrid/DateExtensions.cs)
+- [DateGrid.cs](/src/DateGrid/DateGrid/DateGrid/DateGrid/DateGrid.cs)
+- [DateExtensions.cs](/src/DateGrid/DateGrid/DateGrid/DateGrid/DateExtensions.cs)
 
 
 ## Implementing
