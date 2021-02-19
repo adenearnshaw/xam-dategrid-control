@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="DateGrid.MainPage"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:dg="clr-namespace:DateGrid.DateGrid">
+
+    <Page.Resources>
+        <Style x:Key="DatePickerSelectedStyle"
+               BasedOn="{Static dg:DateGrid.DefaultSelectedStyle}"
+               TargetType="Button">
+            <Setter Property="BackgroundColor" Value="#2196F3" />
+            <Setter Property="TextColor" Value="#F5F5F5" />
+            <Setter Property="CornerRadius" Value="22" />
+        </Style>
+    </Page.Resources>
+
+    <StackLayout>
+        <Frame Padding="24"
+               BackgroundColor="#2196F3"
+               CornerRadius="0">
+            <Label FontSize="36"
+                   HorizontalTextAlignment="Center"
+                   Text="Welcome to DateGrid!"
+                   TextColor="White" />
+        </Frame>
+
+        <dg:DateGrid x:Name="DatePickerGrid"
+                     EndDate="{Binding EndDate}"
+                     FirstDayOfWeek="Monday"
+                     SelectedDateStyle="{StaticResource DatePickerSelectedStyle}"
+                     StartDate="{Binding StartDate}"
+                     Value="{Binding SelectedDate}" />
+    </StackLayout>
+
+</ContentPage>
